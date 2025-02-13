@@ -1,7 +1,4 @@
 ---
-import Image from "astro/components/Image.astro";
-import logo from "../assets/logo.png";
-
 // Define the navigation items with their links
 const navItems = [
   { name: "Home", href: "/" },
@@ -32,14 +29,19 @@ const navItems = [
         </button>
       </div> -->
 
-      <div class="flex justify-center">
+      <div class="flex flex-col items-center">
         <a href="/" class="inline-block">
           <h2
-            class="text-xl lg:text-5xl tracking-[0.25em] text-brown-sugar font-light"
+            class="text-xl lg:text-5xl tracking-[0.25em] text-[var(--color-primary)] font-light"
           >
             R & R Home Gallery
           </h2>
         </a>
+        <h3
+          class="text-md tracking-[0.25em] text-[var(--color-primary)] font-light"
+        >
+          Collection of Antiques
+        </h3>
       </div>
 
       <!-- <div class="absolute right-0 flex items-center">
@@ -89,7 +91,7 @@ const navItems = [
         navItems.map((item) => (
           <li class="group relative">
             <div class="group">
-              <summary class="text-xs lg:text-xl  font-serif list-none cursor-pointer px-3 py-2 text-light-taupe hover:text-gray-900">
+              <summary class="text-xs lg:text-xl  font-serif list-none cursor-pointer px-3 py-2 text-[var(--color-ring)] hover:text-gray-900">
                 <a
                   href={item.href}
                   class="block no-underline hover:text-gray-900"
@@ -117,7 +119,7 @@ const navItems = [
           <li>
             <a
               href={item.href}
-              class="block px-4 py-2 text-light-taupe hover:bg-gray-100 no-underline"
+              class="block px-4 py-2 text-[var(--color-ring)] hover:bg-gray-100 no-underline"
             >
               {item.name}
             </a>
