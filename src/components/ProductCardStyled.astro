@@ -40,7 +40,7 @@ const {
     <div
         class="relative aspect-square overflow-hidden border-b-2 border-amber-800"
     >
-        <div class="absolute inset-0 bg-brown-sugar/10 z-10"></div>
+        <div class="absolute inset-0 bg-[var(--color-primary)]/10 z-10"></div>
         <Image
             src={image}
             alt={title}
@@ -50,14 +50,16 @@ const {
     </div>
 
     <!-- Product details with vintage typography -->
-    <div class="p-6 bg-dutch-white">
-        <h3 class="font-serif text-xl text-brown-sugar mb-3 leading-relaxed">
+    <div class="p-6 bg-[var(--color-background)]">
+        <h3
+            class="font-serif text-xl text-[var(--color-primary)] mb-3 leading-relaxed"
+        >
             {title}
         </h3>
 
         <!-- Price section with decorative line
         <div class="flex items-baseline mb-3 border-b border-amber-800/30 pb-3">
-            <span class="text-2xl font-serif text-brown-sugar">
+            <span class="text-2xl font-serif text-[var(--color-primary)]">
                 {formatPrice(price)}
             </span>
             {
@@ -88,7 +90,9 @@ const {
         </div> -->
 
         <!-- Description with aged paper look -->
-        <p class="text-sm text-brown-sugar/80 mb-4 font-serif leading-relaxed">
+        <p
+            class="text-sm text-[var(--color-primary)]/80 mb-4 font-serif leading-relaxed"
+        >
             {description}
         </p>
 
@@ -111,7 +115,7 @@ const {
             <button
                 class={`px-6 py-2 font-serif text-sm transition-all duration-300 border-2 ${
                     inStock
-                        ? "border-amber-800 text-brown-sugar hover:bg-amber-800 hover:text-amber-50"
+                        ? "border-amber-800 text-[var(--color-primary)] hover:bg-amber-800 hover:text-amber-50"
                         : "border-amber-300 text-amber-300 cursor-not-allowed"
                 }`}
                 disabled={!inStock}

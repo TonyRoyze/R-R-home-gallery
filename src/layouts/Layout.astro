@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 // import Footer from "../components/Footer.astro";
+import "../styles/global.css";
 
 interface Props {
     title?: string;
@@ -22,7 +23,7 @@ const {
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <title>{title} | R & R Home Gallery</title>
     </head>
-    <body class="min-h-screen bg-dutch-white">
+    <body class="min-h-screen bg-[var(--color-background)]">
         <Header client:load />
         <main>
             <slot />

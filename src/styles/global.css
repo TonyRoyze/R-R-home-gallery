@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    :root {
+        /* Colors */
+        --color-border: hsl(43, 41%, 94%);
+        --color-input: hsl(43, 41%, 94%);
+        --color-ring: hsl(33, 33%, 55%);
+        --color-background: hsl(43, 41%, 94%);
+        --color-foreground: hsl(47, 8%, 36%);
+
+        --color-primary: hsl(20, 34%, 49%);
+        --color-primary-foreground: hsl(43, 41%, 94%);
+
+        --color-secondary: hsl(33, 33%, 55%);
+        --color-secondary-foreground: hsl(47, 8%, 36%);
+
+        --color-destructive: hsl(20, 34%, 49%);
+        --color-destructive-foreground: hsl(43, 41%, 94%);
+
+        --color-muted: hsl(33, 33%, 55%);
+        --color-muted-foreground: hsl(47, 8%, 36%);
+
+        --color-accent: hsl(35, 48%, 59%);
+        --color-accent-foreground: hsl(47, 8%, 36%);
+
+        --color-popover: hsl(43, 41%, 94%);
+        --color-popover-foreground: hsl(47, 8%, 36%);
+
+        --color-card: hsl(43, 41%, 94%);
+        --color-card-foreground: hsl(47, 8%, 36%);
+
+        --color-chart-1: hsl(12, 76%, 61%);
+        --color-chart-2: hsl(173, 58%, 39%);
+        --color-chart-3: hsl(197, 37%, 24%);
+        --color-chart-4: hsl(43, 74%, 66%);
+        --color-chart-5: hsl(27, 87%, 67%);
+
+        /* Border Radius */
+        --radius-lg: 0.5rem;
+        --radius-md: calc(0.5rem - 2px);
+        --radius-sm: calc(0.5rem - 4px);
+
+
+    }
+}
