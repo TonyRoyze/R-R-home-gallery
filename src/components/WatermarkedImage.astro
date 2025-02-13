@@ -1,0 +1,22 @@
+---
+import Image from "astro/components/Image.astro";
+
+interface Props {
+    src: ImageMetadata;
+    alt?: string;
+    class?: string;
+}
+
+const { src, alt = "", class: className = "" } = Astro.props;
+---
+
+<div class="relative">
+    <Image src={src} alt={alt} class={`${className}`} />
+    <div
+        class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-30"
+    >
+        <span class="text-4xl font-bold text-white transform -rotate-45">
+            Apparent Accretion
+        </span>
+    </div>
+</div>

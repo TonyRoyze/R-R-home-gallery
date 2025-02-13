@@ -1,0 +1,162 @@
+---
+import Image from "astro/components/Image.astro";
+import logo from "../assets/logo.png";
+
+// Define the navigation items with their links
+const navItems = [
+  { name: "Home", href: "/" },
+  { name: "Collection", href: "/collection" },
+  { name: "Gallery", href: "/gallery" },
+];
+---
+
+<header class="main-header w-full pt-10 lg:pt-20 mb-10" role="banner">
+  <div class="max-w-7xl mx-auto px-4 lg:px-8">
+    <div class="relative flex items-center justify-center mb-4 lg:mb-10">
+      <!-- <div class="absolute left-0 flex items-center lg:hidden">
+        <button class="p-2" aria-label="Menu" data-header-nav-toggle>
+          <span class="navigation-toggle-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-16 6h16"></path>
+            </svg>
+          </span>
+        </button>
+      </div> -->
+
+      <div class="flex justify-center">
+        <a href="/" class="inline-block">
+          <h2
+            class="text-xl lg:text-5xl tracking-[0.25em] text-brown-sugar font-light"
+          >
+            R & R Home Gallery
+          </h2>
+        </a>
+      </div>
+
+      <!-- <div class="absolute right-0 flex items-center">
+        <div class="search-form">
+          <form
+            action="/search"
+            method="get"
+            class="hidden lg:block"
+            role="search"
+          >
+            <div class="relative">
+              <input
+                type="text"
+                name="q"
+                class="w-48 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                type="submit"
+                class="absolute right-2 top-1/2 -translate-y-1/2"
+                aria-label="Submit search"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-gray-500"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div> -->
+    </div>
+  </div>
+
+  <nav class="w-full flex justify-center" data-navigation-content>
+    <ul class="flex space-x-8">
+      {
+        navItems.map((item) => (
+          <li class="group relative">
+            <div class="group">
+              <summary class="text-xs lg:text-xl  font-serif list-none cursor-pointer px-3 py-2 text-light-taupe hover:text-gray-900">
+                <a
+                  href={item.href}
+                  class="block no-underline hover:text-gray-900"
+                >
+                  {item.name}
+                </a>
+              </summary>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
+
+<!-- <div
+    class="navigation-mobile lg:hidden"
+    data-mobile-menu
+    x-show="isMenuOpen"
+    x-cloak
+  >
+    <ul class="py-2">
+      {
+        mobileNavItems.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class="block px-4 py-2 text-light-taupe hover:bg-gray-100 no-underline"
+            >
+              {item.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div> -->
+
+<style>
+  [x-cloak] {
+    display: none !important;
+  }
+
+  details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+</style>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const navToggle = document.querySelector("[data-header-nav-toggle]");
+    const mobileMenu = document.querySelector("[data-mobile-menu]");
+
+    navToggle?.addEventListener("click", () => {
+      mobileMenu?.classList.toggle("hidden");
+    });
+
+    document.addEventListener("click", (event) => {
+      const isClickInside =
+        mobileMenu?.contains(event.target as Node) ||
+        navToggle?.contains(event.target as Node);
+
+      if (!isClickInside && !mobileMenu?.classList.contains("hidden")) {
+        mobileMenu?.classList.add("hidden");
+      }
+    });
+  });
+</script>

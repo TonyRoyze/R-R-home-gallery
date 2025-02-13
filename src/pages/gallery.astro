@@ -1,0 +1,87 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+
+import gallery1 from "../assets/gallery-1.png";
+import gallery2 from "../assets/gallery-2.png";
+import gallery3 from "../assets/gallery-3.png";
+import gallery4 from "../assets/gallery-4.png";
+import gallery5 from "../assets/gallery-5.png";
+import gallery6 from "../assets/gallery-6.png";
+import gallery7 from "../assets/gallery-7.png";
+---
+
+<Layout title="Gallery">
+    <div
+        class="w-full max-w-7xl mx-auto px-4 py-0 lg:py-12 sm:px-6 lg:px-8"
+        style="columns: 300px;"
+    >
+        <p class="md:hidden text-brown-sugar text-center text-md p-6 mb-2">
+            Our Gallery built up on a special concept to display my antique
+            collectio. Constructions done using "Kabok" natural stones in such a
+            way to maintain simple and natural atmosphere. Also considered to
+            make an ancient building having space to display the gallery. Mostly
+            the construction maintained a cooly cilmate to enjoy the Gallery
+        </p>
+        <Image
+            src={gallery4}
+            alt="Main showcase"
+            class="w-full h-full object-cover rounded-lg shadow-lg mb-2"
+            loading="eager"
+            fetchpriority="high"
+        />
+
+        <Image
+            src={gallery5}
+            alt="Main showcase"
+            class="w-full h-full object-cover rounded-lg shadow-lg mb-2"
+            loading="eager"
+            fetchpriority="high"
+        />
+        <p
+            class="hidden md:block text-brown-sugar text-center text-xl p-6 border-2 border-brown-yellow rounded-lg mb-2"
+        >
+            Our Gallery built up on a special concept to display my antique
+            collectio. Constructions done using "Kabok" natural stones in such a
+            way to maintain simple and natural atmosphere. Also considered to
+            make an ancient building having space to display the gallery. Mostly
+            the construction maintained a cooly cilmate to enjoy the Gallery
+        </p>
+        <Image
+            src={gallery1}
+            alt="Main showcase"
+            class="w-full h-full object-cover rounded-lg shadow-lg mb-2"
+            loading="eager"
+            fetchpriority="high"
+        /><Image
+            src={gallery2}
+            alt="Main showcase"
+            class="w-full h-full object-cover rounded-lg shadow-lg mb-2"
+            loading="eager"
+            fetchpriority="high"
+        />
+
+        <Image
+            src={gallery3}
+            alt="Main showcase"
+            class="w-full h-full object-cover rounded-lg shadow-lg mb-2"
+            loading="eager"
+            fetchpriority="high"
+        />
+
+        <Image
+            src={gallery6}
+            alt="Main showcase"
+            class="w-full h-full object-cover rounded-lg shadow-lg mb-2"
+            loading="eager"
+            fetchpriority="high"
+        />
+        <Image
+            src={gallery7}
+            alt="Main showcase"
+            class="w-full h-full object-cover rounded-lg shadow-lg mb-2"
+            loading="eager"
+            fetchpriority="high"
+        />
+    </div>
+</Layout>

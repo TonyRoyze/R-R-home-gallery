@@ -1,0 +1,106 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProductCard from "../components/ProductCardStyled.astro";
+import collection1 from "../assets/collection-1.png";
+import collection2 from "../assets/collection-2.png";
+import collection3 from "../assets/collection-3.png";
+import collection4 from "../assets/collection-4.png";
+import collection5 from "../assets/collection-5.png";
+import collection6 from "../assets/collection-6.png";
+import collection7 from "../assets/collection-7.png";
+import collection8 from "../assets/collection-8.png";
+import collection9 from "../assets/collection-9.png";
+import collection10 from "../assets/collection-10.png";
+import collection11 from "../assets/collection-11.png";
+import collection12 from "../assets/collection-12.png";
+import collection13 from "../assets/collection-13.png";
+import collection14 from "../assets/collection-14.png";
+import collection15 from "../assets/collection-15.png";
+import collection16 from "../assets/collection-16.png";
+import ConceptSection from "../components/ConceptSection.astro";
+---
+
+<Layout title="Collection">
+    <ConceptSection />
+    <div
+        class="w-full max-w-7xl mx-auto px-4 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-6 p-6"
+    >
+        <ProductCard
+            title="Antique Chinese Brass Pot"
+            image={collection1}
+            description="An elegant brass pot from China featuring intricate traditional designs and craftsmanship, perfect for both display and practical use."
+        />
+        <ProductCard
+            title="Collection of Hanging Coconut Oil Lamps"
+            image={collection2}
+            description="A stunning set of traditional hanging lamps historically used with coconut oil, showcasing beautiful metalwork and cultural significance."
+        />
+        <ProductCard
+            title="Vintage Gramophone"
+            image={collection3}
+            description="This exquisite antique gramophone features a handcrafted wooden base, capturing the charm of a bygone era. Perfect for collectors, it adds elegance and nostalgia to any space."
+        />
+        <ProductCard
+            title="Collection of Vintage Lime Boxes"
+            image={collection7}
+            description="Beautifully preserved lime boxes used in traditional betel chewing, featuring intricate designs and historical craftsmanship."
+        />
+        <ProductCard
+            title="Rare Dambadeni Period Hanging Coconut Oil Lamp"
+            image={collection9}
+            description="A unique piece from the historic Dambadeni period, this hanging lamp represents exceptional craftsmanship from medieval Sri Lanka."
+        />
+        <ProductCard
+            title="Collection of Coconut Oil Lamps"
+            image={collection8}
+            description="An assortment of traditional oil lamps, each piece showcasing different styles and periods of Sri Lankan lighting craftsmanship."
+        />
+        <ProductCard
+            title="Vintage Kerosene Oil Lamps for Bicycles"
+            image={collection10}
+            description="Rare collection of bicycle-mounted kerosene lamps, representing early transportation lighting solutions with historical significance."
+        />
+        <ProductCard
+            title="Vintage Gramophone"
+            image={collection4}
+            description="This exquisite antique gramophone features a handcrafted wooden base, capturing the charm of a bygone era. Perfect for collectors, it adds elegance and nostalgia to any space."
+        />
+        <ProductCard
+            title="Collection of Kerosene Oil Lamps"
+            image={collection11}
+            description="A diverse collection of vintage kerosene lamps, each piece telling its own story of lighting technology from the past."
+        />
+        <ProductCard
+            title="Rare Antique Hanging Oil Lamp"
+            image={collection13}
+            description="An exceptional hanging oil lamp featuring unique design elements and superior craftsmanship from a bygone era."
+        />
+        <ProductCard
+            title="Collection of Vintage Lime Boxes"
+            image={collection5}
+            description="Exquisite collection of traditional lime boxes, each piece showcasing detailed metalwork and cultural significance."
+        />
+        <ProductCard
+            title="Vintage Hanging Oil Lamp"
+            image={collection16}
+            description="A beautifully preserved hanging oil lamp with distinctive period features and ornate decorative elements."
+        />
+        <ProductCard
+            title="Collection of Vintage Lime Boxes"
+            image={collection6}
+            description="Carefully curated selection of antique lime boxes, demonstrating various styles and materials used in traditional craftsmanship."
+        />
+        <ProductCard
+            title="Vintage Betel Tray with Boa Leaves"
+            image={collection14}
+            description="Traditional betel serving tray adorned with boa leaf motifs, representing the cultural significance of betel chewing customs."
+        />
+        <ProductCard
+            title="Collection of Antique Water Vessels"
+            image={collection15}
+            description="An impressive array of traditional water vessels, each piece showcasing unique designs and historical water storage solutions."
+        />
+        <!-- Add more ProductCard components as needed -->
+    </div>
+    <p>"This"</p>
+</Layout>
