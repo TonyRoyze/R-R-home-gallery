@@ -1,80 +1,186 @@
 <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <div class="grid lg:grid-cols-2 gap-8">
-        <div class="p-12 bg-white rounded-lg">
-            <div class="text-center space-y-8">
-                <h2 class="text-2xl tracking-[0.25em] text-gray-800 font-light">
-                    C A N E C U L T
-                </h2>
+    <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Info Card -->
+        <div
+            class="relative overflow-hidden p-8 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500"
+        >
+            <div class="relative text-center space-y-10">
+                <!-- Brand -->
+                <div class="space-y-6 flex flex-col">
+                    <h2
+                        class="text-3xl tracking-[0.25em] text-[var(--color-primary)] font-light relative inline-block"
+                    >
+                        R & R Home Gallery
+                    </h2>
 
-                <div class="space-y-1">
-                    <p class="text-[var(--color-primary)]">
-                        Penthouse @ Arena by Serendia
-                    </p>
-                    <p class="text-[var(--color-primary)]">
-                        133, 25 Narahenpita - Nawala Rd,
-                    </p>
-                    <p class="text-[var(--color-primary)]">Colombo 00500</p>
-                    <p class="text-[var(--color-primary)]">Sri Lanka</p>
+                    <!-- Address -->
+                    <div
+                        class="inline-block text-left bg-gray-50 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                    >
+                        <div
+                            class="flex items-start space-x-3 text-[var(--color-primary)]"
+                        >
+                            <!-- <MapPin className="w-5 h-5 text-blue-500 mt-1 flex-shrink-0" /> -->
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-map-pin w-5 h-5 mt-1 flex-shrink-0"
+                                ><path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                                ></path><circle cx="12" cy="10" r="3"
+                                ></circle></svg
+                            >
+                            <div class="space-y-1">
+                                <p class="font-medium text-gray-900">
+                                    Our Location
+                                </p>
+                                <p>120/61, Prime Elysium - Polgasowita Rd,</p>
+                                <p>Mattegoda</p>
+                                <p>Sri Lanka</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="space-y-2">
-                    <h3 class="text-[var(--color-primary)] font-medium">
-                        General / Retail
-                    </h3>
-                    <p>
-                        <span class="text-gray-600">Email: </span>
-                        <a
-                            href="mailto:hi@cane-cult.com"
-                            class="text-[var(--color-primary)] hover:text-[var(--color-accent)] transition-colors"
+                <!-- Contact Section -->
+                <div class="space-y-6">
+                    <div
+                        class="inline-flex items-center justify-center space-x-2 px-4 py-2 bg-[var(--color-accent)]/20 rounded-full text-[var(--color-primary)]"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-clock"
+                            ><circle cx="12" cy="12" r="10"></circle><polyline
+                                points="12 6 12 12 16 14"></polyline></svg
                         >
-                            hi@cane-cult.com
-                        </a>
-                    </p>
-                    <p>
-                        <span class="text-gray-600">Tel: </span>
-                        <a
-                            href="tel:+94769011610"
-                            class="text-[var(--color-primary)] hover:text-[var(--color-accent)] transition-colors"
-                        >
-                            +94 72 925 9763
-                        </a>
-                    </p>
-                </div>
+                        <h3 class="font-medium">Visit by Appointment Only</h3>
+                    </div>
 
-                <div class="space-y-2">
-                    <h3 class="text-[var(--color-primary)] font-medium">
-                        Projects / Consultation / Made-to-order
-                    </h3>
-                    <p>
-                        <span class="text-gray-600">Email: </span>
+                    <div class="grid gap-4 max-w-sm mx-auto">
+                        <!-- Phone -->
                         <a
-                            href="mailto:zully@cane-cult.com"
-                            class="text-[var(--color-primary)] hover:text-[var(--color-accent)] transition-colors"
+                            href="tel:+94729259763"
+                            class="group flex items-center justify-between space-x-3 p-4 rounded-xl bg-white border border-gray-200 hover:border-[var(--color-accent)]/20 hover:bg-[var(--color-accent)]/20 transition-all duration-300"
                         >
-                            zully@cane-cult.com
+                            <div class="flex items-center space-x-3">
+                                <div
+                                    class="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors duration-300"
+                                >
+                                    <!-- <Phone className="w-4 h-4 text-blue-600" /> -->
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-phone w-4 h-4 text-blue-600"
+                                        ><path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                                        ></path></svg
+                                    >
+                                </div>
+                                <span class="text-gray-700 font-medium"
+                                    >+94 72 925 9763</span
+                                >
+                            </div>
+                            <!-- <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-blue-500 transition-colors duration-300" /> -->
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-external-link w-4 h-4 group-hover:text-[var(--color-accent)]/80 transition-colors duration-300"
+                                ><path d="M15 3h6v6"></path><path
+                                    d="M10 14 21 3"></path><path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                ></path></svg
+                            >
                         </a>
-                    </p>
-                    <p>
-                        <span class="text-gray-600">Tel: </span>
+
+                        <!-- WhatsApp -->
                         <a
-                            href="tel:+94769011610"
-                            class="text-[var(--color-primary)] hover:text-[var(--color-accent)] transition-colors"
+                            href="https://wa.me/94729259763"
+                            class="group flex items-center justify-between space-x-3 p-4 rounded-xl bg-white border border-gray-200 hover:border-green-200 hover:bg-green-50 transition-all duration-300"
                         >
-                            +94 (0) 76 901 1610
+                            <div class="flex items-center space-x-3">
+                                <div
+                                    class="p-2 bg-green-100 rounded-lg group-hover:bg-green-200 transition-colors duration-300"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="w-4 h-4 text-green-600"
+                                        fill="currentColor"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-medium"
+                                    >WhatsApp Chat</span
+                                >
+                            </div>
+                            <!-- <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-green-500 transition-colors duration-300" /> -->
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-external-link w-4 h-4 group-hover:text-[var(--color-accent)]/80 transition-colors duration-300"
+                                ><path d="M15 3h6v6"></path><path
+                                    d="M10 14 21 3"></path><path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                ></path></svg
+                            >
                         </a>
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="h-full min-h-[450px] rounded-lg">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.921305892673!2d79.85621887614712!3d6.900014893099228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596309dfdd3f%3A0x45a4b0e7834ac0d4!2sUniversity%20of%20Colombo!5e0!3m2!1sen!2slk!4v1737349477811!5m2!1sen!2slk"
-                class="w-full h-full grayscale"
-                allowfullscreen=""
-                loading="lazy"
-                title="Shop Location"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Map Card -->
+        <div
+            class="group relative h-full min-h-[500px] rounded-2xl overflow-hidden shadow-sm"
+        >
+            <div class="h-full min-h-[450px] rounded-lg">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.5530562029576!2d79.96464727499558!3d6.824083293173728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNDknMjYuNyJOIDc5wrA1OCcwMi4wIkU!5e0!3m2!1sen!2slk!4v1739765297999!5m2!1sen!2slk"
+                    class="w-full h-full grayscale"
+                    allowfullscreen=""
+                    loading="lazy"
+                    title="Shop Location"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
 </div>
