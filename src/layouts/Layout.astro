@@ -1,33 +1,65 @@
 ---
 import Header from "../components/Header.astro";
-// import Footer from "../components/Footer.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
 interface Props {
     title?: string;
     description?: string;
+    image?: string;
+    canonicalURL?: string;
 }
 
 const {
     title = "Home",
-    description = "Discover timeless treasures at our antique store",
+    description = "Visit R & R Home Gallery, your premier destination for luxury antique furniture in Mattegoda, Sri Lanka. We specialize in high-quality antique furniture, vintage collections, and unique home decor pieces. Located at Prime Elysium, Polgasowita Road, our showroom is available for viewing by appointment. Contact us at +94 72 925 9763 to schedule your visit and discover our exclusive collection of timeless pieces.",
+    image = "/default-og-image.jpg",
+    canonicalURL = new URL(Astro.url.pathname, Astro.site),
 } = Astro.props;
+
+const siteTitle = `${title} | R & R Home Gallery`;
 ---
 
 <!doctype html>
 <html lang="en">
     <head>
+        <!-- Essential Meta Tags -->
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={description} />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={canonicalURL} />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalURL} />
+        <meta property="og:title" content={siteTitle} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image} />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={canonicalURL} />
+        <meta property="twitter:title" content={siteTitle} />
+        <meta property="twitter:description" content={description} />
+        <meta property="twitter:image" content={image} />
+
+        <!-- Favicon -->
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <title>{title} | R & R Home Gallery</title>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+
+        <!-- Primary Meta Tags -->
+        <title>{siteTitle}</title>
     </head>
     <body class="min-h-screen bg-[var(--color-background)]">
         <Header />
         <main>
             <slot />
         </main>
-        <!-- <Footer /> -->
+        <Footer />
     </body>
 </html>

@@ -1,27 +1,36 @@
-<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<section
+    class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+    aria-label="Contact and Location Information"
+>
     <div class="grid lg:grid-cols-2 gap-12">
         <!-- Info Card -->
         <div
             class="relative overflow-hidden p-8 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500"
+            itemscope
+            itemtype="http://schema.org/Store"
         >
             <div class="relative text-center space-y-10">
                 <!-- Brand -->
                 <div class="space-y-6 flex flex-col">
-                    <h2
+                    <h1
                         class="text-3xl tracking-[0.25em] text-[var(--color-primary)] font-light relative inline-block"
+                        itemprop="name"
                     >
                         R & R Home Gallery
-                    </h2>
+                    </h1>
 
                     <!-- Address -->
                     <div
                         class="inline-block text-left bg-gray-50 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                        itemprop="address"
+                        itemscope
+                        itemtype="http://schema.org/PostalAddress"
                     >
                         <div
                             class="flex items-start space-x-3 text-[var(--color-primary)]"
                         >
-                            <!-- <MapPin className="w-5 h-5 text-blue-500 mt-1 flex-shrink-0" /> -->
                             <svg
+                                aria-label="Location Pin Icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
@@ -41,9 +50,11 @@
                                 <p class="font-medium text-gray-900">
                                     Our Location
                                 </p>
-                                <p>120/61, Prime Elysium - Polgasowita Rd,</p>
-                                <p>Mattegoda</p>
-                                <p>Sri Lanka</p>
+                                <p itemprop="streetAddress">
+                                    120/61, Prime Elysium - Polgasowita Rd,
+                                </p>
+                                <p itemprop="addressLocality">Mattegoda</p>
+                                <p itemprop="addressCountry">Sri Lanka</p>
                             </div>
                         </div>
                     </div>
@@ -55,6 +66,7 @@
                         class="inline-flex items-center justify-center space-x-2 px-4 py-2 bg-[var(--color-accent)]/20 rounded-full text-[var(--color-primary)]"
                     >
                         <svg
+                            aria-label="Clock Icon"
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
                             height="24"
@@ -68,13 +80,15 @@
                             ><circle cx="12" cy="12" r="10"></circle><polyline
                                 points="12 6 12 12 16 14"></polyline></svg
                         >
-                        <h3 class="font-medium">Visit by Appointment Only</h3>
+                        <h2 class="font-medium">Visit by Appointment Only</h2>
                     </div>
 
                     <div class="grid gap-4 max-w-sm mx-auto">
                         <!-- Phone -->
                         <a
                             href="tel:+94729259763"
+                            itemprop="telephone"
+                            aria-label="Call us at +94 72 925 9763"
                             class="group flex items-center justify-between space-x-3 p-4 rounded-xl bg-white border border-gray-200 hover:border-[var(--color-accent)]/20 hover:bg-[var(--color-accent)]/20 transition-all duration-300"
                         >
                             <div class="flex items-center space-x-3">
@@ -124,6 +138,8 @@
                         <!-- WhatsApp -->
                         <a
                             href="https://wa.me/94729259763"
+                            itemprop="url"
+                            aria-label="Chat with us on WhatsApp"
                             class="group flex items-center justify-between space-x-3 p-4 rounded-xl bg-white border border-gray-200 hover:border-green-200 hover:bg-green-50 transition-all duration-300"
                         >
                             <div class="flex items-center space-x-3">
@@ -137,7 +153,7 @@
                                         viewBox="0 0 16 16"
                                     >
                                         <path
-                                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 .943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
                                         ></path>
                                     </svg>
                                 </div>
@@ -171,6 +187,7 @@
         <!-- Map Card -->
         <div
             class="group relative h-full min-h-[500px] rounded-2xl overflow-hidden shadow-sm"
+            itemprop="hasMap"
         >
             <div class="h-full min-h-[450px] rounded-lg">
                 <iframe
@@ -178,9 +195,21 @@
                     class="w-full h-full grayscale"
                     allowfullscreen=""
                     loading="lazy"
-                    title="Shop Location"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    title="R & R Home Gallery Location Map - Luxury Antique Furniture Store in Mattegoda"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    aria-label="Interactive map showing our store location in Mattegoda"
+                ></iframe>
             </div>
         </div>
     </div>
-</div>
+
+    <!-- SEO-optimized hidden content -->
+    <div class="sr-only" itemprop="description">
+        Visit R & R Home Gallery, your premier destination for luxury antique
+        furniture in Mattegoda, Sri Lanka. We specialize in high-quality antique
+        furniture, vintage collections, and unique home decor pieces. Located at
+        Prime Elysium, Polgasowita Road, our showroom is available for viewing
+        by appointment. Contact us at +94 72 925 9763 to schedule your visit and
+        discover our exclusive collection of timeless pieces.
+    </div>
+</section>
